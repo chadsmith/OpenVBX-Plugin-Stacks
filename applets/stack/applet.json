@@ -1,0 +1,8 @@
+{
+	"name" : "Stack",
+	"sms_name" : "Stack",
+	"voice_title" : "Stack",
+	"sms_title" : "Stack",
+	"description" : "Respond with the next message in the stack.",
+	"type" : ["sms"]
+}

@@ -1,0 +1,12 @@
+{
+	"name" : "Stacks",
+	"author" : "Chad Smith <chad@nospam.me>",
+	"description" : "Auto-respond with a predefined series of messages.",
+	"url" : "http://twitter.com/chadsmith",
+	"links" : [{
+		"menu" : "Stacks",
+		"url" : "stacks",
+		"script" : "stacks.php",
+		"label" : "Manage Stacks"
+	}]
+}
