@@ -21,7 +21,7 @@ $(function(){
 	$('.vbx-stacks .stack a.delete').click(function() {
 		var $stack = $(this).parent().parent().parent();
 		var id = $stack.attr('id');
-		if(confirm('You are about to delete "' + $list.children().children('span').eq(0).text() + '" and all its messages.'))
+		if(confirm('You are about to delete "' + $stack.children().children('span').eq(0).text() + '" and all its messages.'))
 			$.ajax({
 				type: 'POST',
 				url: window.location,
