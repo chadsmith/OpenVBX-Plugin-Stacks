@@ -15,7 +15,7 @@ $(function(){
 		var $form = $('.vbx-stacks form:not(.add):visible');
 		$('.vbx-stacks .message:not(.' + id + '):visible').slideUp();
 		$('.vbx-stacks .message.' + id).slideToggle();
-		$form[id.match(/([\d]+)/)[1] != $form.find('input[name=stack]').val() ? 'slideUp' : 'show']();
+		$form[id.match(/([\d]+)/)[1] != $form.find('input[name="stack"]').val() ? 'slideUp' : 'show']();
 		return false;
 	});
 	$('.vbx-stacks .stack a.delete').click(function() {
@@ -55,7 +55,7 @@ $(function(){
 		var $stack = $(this).parent().parent().parent();
 		var id = $stack.attr('id');
 		var stack = id.match(/([\d]+)/)[1];
-		var $input = $('.vbx-stacks form.update-sms input[name=stack]');
+		var $input = $('.vbx-stacks form.update-sms input[name="stack"]');
 		var $form = $('.vbx-stacks form.update-sms');
 		$('.vbx-stacks form:visible').not($form).add('.vbx-stacks .message:not(.' + id + ')').slideUp();
 		$form[stack == $input.val() ? 'slideToggle' : 'slideDown']();
